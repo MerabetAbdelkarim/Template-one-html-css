@@ -1,0 +1,34 @@
+.navbar{
+    background-color: #30fa03;
+}
+.navbar .container{
+    margin: auto 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #eb0000;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: #30fa03;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: all 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
