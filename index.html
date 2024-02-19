@@ -3,24 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="navbar">
+    <nav class="navbar">
         <div class="container">
             <div class="logo">
                 Flivan
             </div>
-            <ul>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
+            <input type="checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span class="bar-one"></span>
+                <span class="bar-two"></span>
+                <span class="bar-tree"></span>
+            </label>
+            <ul class="menu">
+                <li><a href="#">home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Seats</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><button>Contact</button></li>
             </ul>
-            <button>Contact</button>
+            
         </div>
-        
-    </div>
+        <script>
+            document.getElementById('nav-toggle').addEventListener('click', function() {
+            var menu = document.querySelector('.menu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+            });
+            document.getElementById('nav-toggle').addEventListener('click', function() {
+            var toggle = document.querySelector('.nav-toggle-label');
+            toggle.classList.toggle('click');
+            });
+        </script>
+    </nav>
 </body>
 </html>
