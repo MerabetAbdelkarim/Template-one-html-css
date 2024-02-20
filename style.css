@@ -132,3 +132,25 @@
         display: block;
     }
 }
+
+
+/*----------- header start ----------*/
+.header{
+    max-width: 100%;
+    overflow: hidden;
+}
+.header .header-content{
+    text-align: center;
+    font-weight: 600;
+    font-size: 3rem;
+}
+.header .header-image{
+    text-align: center;
+    font-weight: 600;
+    font-size: 3rem;
+    width: 100%;
+    min-width: 500px;
+    height: auto;
+}
+
+/*----------- header end   ----------*/

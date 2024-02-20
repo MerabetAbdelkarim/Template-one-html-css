@@ -32,16 +32,25 @@
             </ul>
             
         </div>
-        <script>
-            document.getElementById('nav-toggle').addEventListener('click', function() {
-            var menu = document.querySelector('.menu');
-            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-            });
-            document.getElementById('nav-toggle').addEventListener('click', function() {
-            var toggle = document.querySelector('.nav-toggle-label');
-            toggle.classList.toggle('click');
-            });
-        </script>
+        
     </nav>
+    <div class="header">
+        <h1 class="header-content">
+            Find And Book
+            <br>
+            A Great Experience
+        </h1>
+        <img class="header-image" src="assets/header.jpg" alt="" srcset="">
+    </div>
+    <script>
+        document.getElementById('nav-toggle').addEventListener('click', function() {
+        var menu = document.querySelector('.menu');
+        menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        });
+        document.getElementById('nav-toggle').addEventListener('click', function() {
+        var toggle = document.querySelector('.nav-toggle-label');
+        toggle.classList.toggle('click');
+        });
+    </script>
 </body>
 </html>
